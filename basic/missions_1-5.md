@@ -3,7 +3,7 @@ This level is what we call "The Idiot Test", if you can't complete it, don't giv
 
 **Answer:** Check the page source. Above the password form I see this comment:  
 `<!-- the first few levels are extremely easy: password is a13fe647 -->`  
-Enter the password and submit.
+The password might be different for you. But enter whatever text you see and submit.
 
 **Key Ideas:** Check the raw HTML and see what you can learn.
 
@@ -19,7 +19,7 @@ This time Network Security Sam remembered to upload the password file, but there
 
 **Answer:** Like Mission 1, start by checking the page source. The HTML for the password form includes this line:  
 `<input type="hidden" name="file" value="password.php" />`.  
-Try navigating to https://www.hackthissite.org/missions/basic/3/password.php. When I go there I see the password is cfeb85f7. Go back to the previous page, enter the password, and submit.
+Try navigating to https://www.hackthissite.org/missions/basic/3/password.php. When I go there I see the password as a plain-text string. Go back to the previous page, enter the password, and submit.
 
 **Key Ideas:** This is exactly the issue highlighted in Mission 2, but in that mission it was irrelevant because Sam didn't upload the password file. If you can discover pusedo-hidden pages and files by checking the raw HTML, try accessing them and see what you can learn.
 
