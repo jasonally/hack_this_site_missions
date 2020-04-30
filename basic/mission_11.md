@@ -11,7 +11,8 @@ The .htaccess file loads, revealing these contents:
 ```IndexIgnore DaAnswer.* .htaccess
 <Files .htaccess>
 require all granted
-</Files>```
+</Files>
+```
 
 Navigate to https://www.hackthissite.org/missions/basic/11/e/l/t/o/n/DaAnswer/. I saw something like this: 'The answer is not here! Just look a little harder.'  
 
