@@ -7,4 +7,4 @@ You can do this in a variety of ways. The manual way would be to simply enter `d
 
 I also have the [Edit This Cookie](http://editthiscookie.com/) extension. Regardless of your method, change the cookie value to yes, submit the form (no need to enter a password), and you're done.  
 
-**Key Idea:** It's pretty well known by now to prevent users from tampering with cookies, but if you find you can, there's a lot you can do.
+**Key Idea:** It's pretty well known by now to prevent users from tampering with cookies, but if you find you can tamper with them, there's a lot you can do.
