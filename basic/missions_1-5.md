@@ -1,7 +1,9 @@
 # Mission 1
 This level is what we call "The Idiot Test", if you can't complete it, don't give up on learning all you can, but, don't go begging to someone else for the answer, thats one way to get you hated/made fun of. Enter the password and you can continue.
 
-**Answer:** Check the page source. Above the password form I see this comment: `<!-- the first few levels are extremely easy: password is a13fe647 -->`. Enter the password and submit.
+**Answer:** Check the page source. Above the password form I see this comment:  
+`<!-- the first few levels are extremely easy: password is a13fe647 -->`  
+Enter the password and submit.
 
 **Key Ideas:** Check the raw HTML and see what you can learn.
 
@@ -15,7 +17,9 @@ Network Security Sam set up a password protection script. He made it load the re
 # Mission 3
 This time Network Security Sam remembered to upload the password file, but there were deeper problems than that.
 
-**Answer:** Like Mission 1, start by checking the page source. The HTML for the password form includes this line: `<input type="hidden" name="file" value="password.php" />`. Try navigating to https://www.hackthissite.org/missions/basic/3/password.php. When I go there I see the password is cfeb85f7. Go back to the previous page, enter the password, and submit.
+**Answer:** Like Mission 1, start by checking the page source. The HTML for the password form includes this line:  
+`<input type="hidden" name="file" value="password.php" />`.  
+Try navigating to https://www.hackthissite.org/missions/basic/3/password.php. When I go there I see the password is cfeb85f7. Go back to the previous page, enter the password, and submit.
 
 **Key Ideas:** This is exactly the issue highlighted in Mission 2, but in that mission it was irrelevant because Sam didn't upload the password file. If you can discover pusedo-hidden pages and files by checking the raw HTML, try accessing them and see what you can learn.
 
@@ -23,7 +27,9 @@ This time Network Security Sam remembered to upload the password file, but there
 This time Sam hardcoded the password into the script. However, the password is long and complex, and Sam is often forgetful. So he wrote a script that would email his password to him automatically in case he forgot. Here is the script:  
 [form box]
 
-**Answer:** If you click the 'Send password to Sam' button, you'll see it indeed sends a password reminder email. Next, check the page source. There's this line in the HTML: `<input type="hidden" name="to" value="sam@hackthissite.org" />`. What if you change the email address to your own (or more specifically, the email address you used to sign up for Hack this Site)? Edit the value attribute using Developer Tools and click the password reset button. The password should be emailed to you.
+**Answer:** If you click the 'Send password to Sam' button, you'll see it indeed sends a password reminder email. Next, check the page source. There's this line in the HTML:  
+`<input type="hidden" name="to" value="sam@hackthissite.org" />`  
+What if you change the email address to your own (or more specifically, the email address you used to sign up for Hack this Site)? Edit the value attribute using Developer Tools and click the password reset button. The password should be emailed to you.
 
 **Key Idea:** Missions 1 and 3 were about what you can learn from checking the raw HTML, but this mission goes one step further by encouraging you to try manipulating the raw HTML. Sometimes it will actually work.
 
