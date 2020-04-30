@@ -8,10 +8,10 @@ When you load the mission, text like 'I love my music! "Georgia " is the best!' 
 Eventually https://www.hackthissite.org/missions/basic/11/e/ works. Click through the ensuing directories you discover and you'll end up at https://www.hackthissite.org/missions/basic/11/e/l/t/o/n/. This directory seems empty, but try accessing the .htaccess file at https://www.hackthissite.org/missions/basic/11/e/l/t/o/n/.htaccess.  
 
 The .htaccess file loads, revealing these contents:  
-`IndexIgnore DaAnswer.* .htaccess`  
-`<Files .htaccess>`  
-`require all granted`  
-`</Files>`  
+```IndexIgnore DaAnswer.* .htaccess
+<Files .htaccess>
+require all granted
+</Files>```
 
 Navigate to https://www.hackthissite.org/missions/basic/11/e/l/t/o/n/DaAnswer/. I saw something like this: 'The answer is not here! Just look a little harder.'  
 
