@@ -1,4 +1,6 @@
 # Mission 4
+https://www.hackthissite.org/missions/javascript/4/
+
 Faith is trying to trick you... she knows that you're tired after all the math works...
 
 **Answer:** This confused me for longer than it probably should have. Check the page source and look at the JavaScript:

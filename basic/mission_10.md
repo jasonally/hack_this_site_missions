@@ -1,4 +1,6 @@
 # Mission 10
+https://www.hackthissite.org/missions/basic/10/
+
 From the Basic Missions overview page: This time Sam used a more temporary and "hidden" approach to authenticating users, but he didn't think about whether or not those users knew their way around javascript...
 
 **Answer:** Take note of the hint about JavaScript. If you open Developer Tools, try printing the value of document.cookie from the Console. For me it looked something like `level10_authorized=no; PHPSESSID={session ID value}`. What if we changed the value so `level10_authorized=yes`?  

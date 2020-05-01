@@ -1,4 +1,6 @@
 # Mission 6
+https://www.hackthissite.org/missions/javascript/6/
+
 Fiftysixer decided to try his hand at javascript!  
 All was going well until he realized that he forgot to remove the unused code, which resulted in a confusing mess.  
 He didn't mind, in fact, he did his best to make it even MORE confusing!

@@ -1,4 +1,6 @@
 # Mission 1
+https://www.hackthissite.org/missions/javascript/1/
+
 faith is learning Javascript, the only thing that is protecting her from hackers is luck.
 
 **Answer:** Check the page source. For me, starting on Line 144 there's this code:  
@@ -22,6 +24,8 @@ When a user enters a password and clicks Check Password, JavaScript calls the ch
 **Key Idea:** Like with HTML, check all the pieces of JavaScript code on a page or site. Sometimes what you're looking for is hiding in plain sight.
 
 # Mission 2
+https://www.hackthissite.org/missions/javascript/2/
+
 faith had made a redirect script and logout with javascript to keep hackers away.
 
 **Answer:** Clicking the Take this challenge! link leads you to https://www.hackthissite.org/missions/javascript/2/, which redirects to https://www.hackthissite.org/missions/javascript/2/fail.php with a message: You didn't disable javascript!
@@ -33,6 +37,8 @@ Now, no redirection occurs. And there's a link: Click here to win. Click it and 
 **Key Idea:** You don't always have to enter a specific input to get the behavior you're looking for. Sometimes you might be able to just switch something off to get unexpected results, in this case switching off JavaScript.
 
 # Mission 3
+https://www.hackthissite.org/missions/javascript/3/
+
 faith is going to test your math skills and your javascript operations.
 
 **Answer:** The premise of this mission is you enter an input and it gets passed to check(), much like Mission 1. check() this time looks to see if the length of your input == moo, moo being a variable defined in the JavaScript code.

@@ -1,4 +1,6 @@
 # Mission 1
+https://www.hackthissite.org/missions/basic/1/
+
 This level is what we call "The Idiot Test", if you can't complete it, don't give up on learning all you can, but, don't go begging to someone else for the answer, thats one way to get you hated/made fun of. Enter the password and you can continue.
 
 **Answer:** Check the page source. Above the password form I see this comment:  
@@ -8,6 +10,8 @@ The password might be different for you. But enter whatever text you see and sub
 **Key Ideas:** Check the raw HTML and see what you can learn.
 
 # Mission 2
+https://www.hackthissite.org/missions/basic/2/
+
 Network Security Sam set up a password protection script. He made it load the real password from an unencrypted text file and compare it to the password the user enters. However, he neglected to upload the password file...
 
 **Answer:** If Sam didn't upload the password file, that means you just have to enter nothing in the password form and submit. Sam using an unencrypted text file is also a problem because anyone can read the password if they can find the file, but for the purposes of this mission it's irrelevant if Sam didn't upload the file.
@@ -15,6 +19,8 @@ Network Security Sam set up a password protection script. He made it load the re
 **Key Ideas:** Try entering random inputs (or in this case, try entering no input). Entering random inputs by itself won't necessarily help you find a solution, but it'll help you better understand what's happening on the backend. That could then allow you to craft a more precise input to get the result you're looking for.
 
 # Mission 3
+https://www.hackthissite.org/missions/basic/3/
+
 This time Network Security Sam remembered to upload the password file, but there were deeper problems than that.
 
 **Answer:** Like Mission 1, start by checking the page source. The HTML for the password form includes this line:  
@@ -24,6 +30,8 @@ Try navigating to https://www.hackthissite.org/missions/basic/3/password.php. Wh
 **Key Ideas:** This is exactly the issue highlighted in Mission 2, but in that mission it was irrelevant because Sam didn't upload the password file. If you can discover pusedo-hidden pages and files by checking the raw HTML, try accessing them and see what you can learn.
 
 # Mission 4
+https://www.hackthissite.org/missions/basic/4/
+
 This time Sam hardcoded the password into the script. However, the password is long and complex, and Sam is often forgetful. So he wrote a script that would email his password to him automatically in case he forgot. Here is the script:  
 [form box]
 
@@ -34,6 +42,8 @@ What if you change the email address to your own (or more specifically, the emai
 **Key Idea:** Missions 1 and 3 were about what you can learn from checking the raw HTML, but this mission goes one step further by encouraging you to try manipulating the raw HTML. Sometimes it will actually work.
 
 # Mission 5
+https://www.hackthissite.org/missions/basic/5/
+
 Sam has gotten wise to all the people who wrote their own forms to get the password. Rather than actually learn the password, he decided to make his email program a little more secure.
 
 **Answer:** Trying to make the email program more secure instead of fixing the actual problem on the site means the solution to Mission 4 also works in this mission. Follow the same steps to edit the email address value using Developer Tools and send yourself the password.

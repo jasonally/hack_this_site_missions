@@ -1,4 +1,6 @@
 # Mission 11
+https://www.hackthissite.org/missions/basic/11/
+
 From the Basic Missions overview page: Sam decided to make a music site. Unfortunately he does not understand Apache. This mission is a bit harder than the other basics.  
 
 **Answer:** Not understanding Apache is a clue, because directory listing in Apache is often [enabled by default](https://www.techrepublic.com/article/how-to-make-apache-more-secure-by-hiding-directory-folders/). This means a user can map out subdirectories of your site if he or she successfully enters in a URL which resolves to a directory path.  

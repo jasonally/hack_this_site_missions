@@ -1,4 +1,5 @@
 # Mission 9
+https://www.hackthissite.org/missions/basic/9/
 
 Network Security Sam is going down with the ship - he's determined to keep obscuring the password file, no matter how many times people manage to recover it. This time the file is saved in /var/www/hackthissite.org/html/missions/basic/9/.  
 

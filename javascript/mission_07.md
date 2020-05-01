@@ -1,4 +1,6 @@
 # Mission 7
+https://www.hackthissite.org/missions/javascript/7/
+
 JS Obfuscation. FTW!
 
 **Answer:** Short answer first: Use the Inspect feature in DevTools to check the HTML of the Check Password button. You'll see something like:

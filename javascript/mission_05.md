@@ -1,4 +1,6 @@
 # Mission 5
+https://www.hackthissite.org/missions/javascript/5/
+
 Uhm, faith spelled runescape wrong?
 
 **Answer:** Look at the code and you'll see check() compares the user input to moo, moo being a variable defined as `unescape('%69%6C%6F%76%65%6D%6F%6F')`. If you run `unescape('%69%6C%6F%76%65%6D%6F%6F')` in your DevTools Console, you'll see it resolves to ilovemoo, which is your answer.

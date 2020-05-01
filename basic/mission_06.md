@@ -1,4 +1,6 @@
 # Mission 6
+https://www.hackthissite.org/missions/basic/6/
+
 Network Security Sam has encrypted his password. The encryption system is publically available and can be accessed with this form:  
 [form box]  
 You have recovered his encrypted password. It is: 84eh:f>7  

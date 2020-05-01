@@ -1,4 +1,6 @@
 # Mission 7
+https://www.hackthissite.org/missions/basic/7/
+
 This time Network Security sam has saved the unencrypted level7 password in an obscurely named file saved in this very directory. In other unrelated news, Sam has set up a script that returns the output from the UNIX cal command. Here is the script:  
 Enter the year you wish to view and hit 'view'.  
 [form box]  
