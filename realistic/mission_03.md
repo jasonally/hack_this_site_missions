@@ -10,7 +10,7 @@ Message: I run this website where people can read and submit peace-related poetr
 * Once we find the code of what the site looked like, we'll need to find a mechanism to get that code back onto the site.
 * A corollary to the prior point is: if we can find a way to change the code on part of the site, that's probably the same mechanism the hackers used to deface the site in the first place.
 
-If we click into the mission itself, we're taken to the defaced page (the mid-2000s bent to the hacked content seems so...idyllic, looking back on it). Check the raw HTML to see if there's anything we can learn, and sure enough, at the very bottom (you need to scroll all the way to the bottom), there's this:
+If we click into the mission itself, we're taken to the defaced page (the mid-2000s bent to the hacked content seems so...idyllic, looking back on it). Check the raw HTML to see if there's anything we can learn, and sure enough, at the very bottom (you need to scroll all the way to the bottom), there's this:  
 `<!--Note to the webmasterThis website has been hacked, but not totally destroyed. The old website is still up. I simply copied the old index.html file to oldindex.html and remade this one. Sorry about the inconvenience.-->`
 
 This tells us:
@@ -25,7 +25,7 @@ The old index page has two links, one to an area to read submitted poems and one
 
 This means there are some PHP scripts running on the backend, which is good to know. If you click any of the poems, like https://www.hackthissite.org/missions/realistic/3/readpoem.php?name=Hacker, you'll see the resulting URL contains a query parameter (the name=Hacker) part. This also means there's a database functionality.
 
-Finally, if you navigate to https://www.hackthissite.org/missions/realistic/3/submitpoems.php specifically, you'll see there's a way for anyone to submit a poem to the site. There's also this message:
+Finally, if you navigate to https://www.hackthissite.org/missions/realistic/3/submitpoems.php specifically, you'll see there's a way for anyone to submit a poem to the site. There's also this message:  
 `Note: Poems will be stored online immediately but will not be listed on the main poetry page until it has a chance to be looked at.`
 
 Putting it all together, we have our framework for a solution:
