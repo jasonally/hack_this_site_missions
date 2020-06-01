@@ -1,5 +1,5 @@
 # Mission 7
-https://www.hackthissite.org/playlevel/6/
+https://www.hackthissite.org/playlevel/7/
 
 From: FreedomOfChoice
 
