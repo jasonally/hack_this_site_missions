@@ -40,7 +40,7 @@ We've got our hash to decrypt. I figured, taking the '10 years out of date' part
 It took a bit to understand Hashcat's flags and syntax, but this [Stack Exchange thread](https://security.stackexchange.com/questions/167767/cracking-md4-hash) helped me formulate the right command to brute-force an MD4 hash: `hashcat -m 900 cdbb3e741a3086fa64c17f12b63815ce -a 3 -o cracked.txt`. You might, however, first need to create the cracked.txt file in your current working directory before running the command. MD4 is so easily broken now that Hashcat should decrypt the password in a few seconds. Open the cracked.txt file and you'll see the decrypted password appended to your input hash following a colon. Enter in the password at https://www.hackthissite.org/missions/realistic/5/submit.html, submit, and you're done.
 
 ## Key Concepts
-robots.txt
+robots.txt  
 Hash cracking
 
 ## Key Ideas

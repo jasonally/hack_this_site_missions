@@ -45,9 +45,9 @@ In Realistic Mission 5 I used Hashcat to crack the MD4 hash in part because I wa
 After using JTR to crack the password hash, I went back to https://www.hackthissite.org/missions/realistic/7/images/admin/, entered in the username and decrypted password, and that completed the mission.
 
 ## Key Concepts
-Directory listing
-Path traversal
-Hash cracking
+Directory listing  
+Path traversal  
+Hash cracking  
 
 ## Key Ideas 
 This mission again demonstrated how websites are, at their core, essentially programs running on a computer. If you know what the backend technology looks like (e.g., many websites run Apache and/or have a Linux operating system), it gives you some clues as to what sort of settings are in place by default, how security measures work by default, and how you can poke and prod at them. 
