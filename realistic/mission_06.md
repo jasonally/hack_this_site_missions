@@ -1,6 +1,7 @@
 # Mission 6
 https://www.hackthissite.org/playlevel/6/
 
+- [Overview](#overview)
 - [Solution](#solution)
   * [The Easy Way](#the-easy-way)
   * [The Harder Way](#the-harder-way)
