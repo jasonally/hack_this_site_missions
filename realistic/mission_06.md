@@ -1,6 +1,12 @@
 # Mission 6
 https://www.hackthissite.org/playlevel/6/
 
+- [Solution](#solution)
+  * [The Easy Way](#the-easy-way)
+  * [The Harder Way](#the-harder-way)
+- [Key Concepts](#key-concepts)
+- [Key Idea](#key-idea)
+
 ## Overview
 Decrypt a heavily encoded message from a CEO trying to bribe ecological inspectors investigating water pollution issues. Help environmentalists uncover corporations plotting to profit from the destruction of mother nature!
 

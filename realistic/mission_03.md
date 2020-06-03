@@ -1,6 +1,11 @@
 # Mission 3
 https://www.hackthissite.org/playlevel/3/
 
+- [Overview](#overview)
+- [Solution](#solution)
+- [Key Concept](#key-concept)
+- [Key Ideas](#key-ideas)
+
 ## Overview
 A little girl made a website to post poetry related to peace and understanding. American fascists have hacked this website replacing it with Hitler-esque propaganda. Can you repair the website?
 

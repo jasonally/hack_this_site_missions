@@ -1,6 +1,13 @@
 # Mission 5
 https://www.hackthissite.org/playlevel/5/
 
+- [Overview](#overview)
+- [Solution](#solution)
+  * [Searching for Useful Clues](#searching-for-useful-clues)
+  * [Decrypting the Password Hash with Hashcat](#decrypting-the-password-hash-with-hashcat)
+- [Key Concepts](#key-concepts)
+- [Key Ideas](#key-ideas)
+
 ## Overview
 Telemarketers are invading people's privacy and peace and quiet. Get the password for the administrative section of the site to delete their database and return the privacy of their victims!
 

@@ -1,6 +1,11 @@
 # Mission 2
 https://www.hackthissite.org/playlevel/2/
 
+- [Overview](#overview)
+- [Solution](#solution)
+- [Key Concept](#key-concept)
+- [Key Ideas](#key-ideas)
+
 ## Overview
 Racist pigs are organizing an 'anti-immigrant' rally in Chicago. Help anti-racist activists take over their website!
 

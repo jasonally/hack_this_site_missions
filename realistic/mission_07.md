@@ -1,6 +1,14 @@
 # Mission 7
 https://www.hackthissite.org/playlevel/7/
 
+- [Overview](#overview)
+- [Solution](#solution)
+  * [Locating the admin Section](#locating-the-admin-section)
+  * [Finding the Login Credentials](#finding-the-login-credentials)
+  * [Cracking the Hash](#cracking-the-hash)
+- [Key Concepts](#key-concepts)
+- [Key Ideas](#key-ideas)
+
 ## Overview
 A homophobic hate group is spreading their conservative propaganda of blind obedience and bigoted war mongering. Help tolerance activists take over their website of ignorance and discrimination.
 

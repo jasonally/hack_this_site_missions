@@ -1,5 +1,5 @@
 #! /usr/bin/env python3
-# mission_05_solver.py - Decrypts text from HTS Realistic Mission 5.
+# mission_05_solver.py - Decrypts text from HTS Realistic Mission 6.
 
 import logging
 

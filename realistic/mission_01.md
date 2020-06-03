@@ -1,6 +1,11 @@
 # Mission 1
 https://www.hackthissite.org/playlevel/1/
 
+- [Overview](#overview)
+- [Solution](#solution)
+- [Key Concept](#key-concept)
+- [Key Idea](#key-idea)
+
 ## Overview
 Your friend is being cheated out of hundreds of dollars. Help him make things even again!
 

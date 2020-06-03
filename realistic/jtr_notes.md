@@ -1,5 +1,11 @@
 # Notes on John the Ripper
 
+- [Overview](#overview)
+- [Downloading](#downloading)
+- [Installing](#installing)
+- [Running](#running)
+
+## Overview
 This is meant to be a follow up to `mission_07.md`, where I used JTR to crack an MD5 hash. I could have used JTR in an earlier mission but I sort of ducked out of it and used another password cracking program because I found the install and run instructions a bit confusing at first. But my second attempt was much more successful.
 
 ## Downloading

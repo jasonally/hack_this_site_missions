@@ -1,6 +1,14 @@
 # Mission 4
 https://www.hackthissite.org/playlevel/4/
 
+- [Overview](#overview)
+- [Solution](#solution)
+  * [Initial Observations](#initial-observations)
+  * [Finding Another Weakness](#finding-another-weakness)
+  * [Setting Up the UNION Attack](#setting-up-the-union-attack)
+- [Key Concept](#key-concept)
+- [Key Ideas](#key-ideas)
+
 ## Overview
 FAP is a company that slaughters animals and turns their skin into overpriced products which are then sold to rich bastards! Help animal rights activists increase political awareness by hacking their mailing list.
 
