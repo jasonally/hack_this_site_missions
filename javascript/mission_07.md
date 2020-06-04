@@ -1,9 +1,15 @@
 # Mission 7
 https://www.hackthissite.org/missions/javascript/7/
 
+- [Overview](#overview)
+- [Solution](#solution)
+- [Key Idea](#key-idea)
+
+## Overview
 JS Obfuscation. FTW!
 
-**Answer:** Short answer first: Use the Inspect feature in DevTools to check the HTML of the Check Password button. You'll see something like:
+## Solution
+Short answer first: Use the Inspect feature in DevTools to check the HTML of the Check Password button. You'll see something like:
 `<button onclick="javascript:if (document.getElementById(&quot;pass&quot;).value==&quot;j00w1n&quot;){alert(&quot;You WIN!&quot;);window.location += &quot;?lvl_password=&quot;+document.getElementById(&quot;pass&quot;).value}else {alert(&quot;WRONG! Try again!&quot;)}">Check Password</button>`
 
 The answer is in that code: j00w1n.
@@ -30,4 +36,5 @@ We can see what this resolves to by reducing the code down to this:
 
 Run this code in your developer tools console and you'll see it resolves to the code we saw in Inspect view. Apparently this part of the obfuscated JavaScript was in [UTF-16](https://en.wikipedia.org/wiki/UTF-16) encoding.
 
-**Key Ideas:** The Inspect view of a page shows source code after rendering any JavaScript. The View Page Source view doesn't show rendered JavaScript. Additionally, there are several ways to obfuscate JavaScript but you can usually reverse the code and deobfuscate them if you work carefully.
+## Key Idea
+The Inspect view of a page shows source code after rendering any JavaScript. The View Page Source view doesn't show rendered JavaScript. Additionally, there are several ways to obfuscate JavaScript but you can usually reverse the code and deobfuscate them if you work carefully.

@@ -1,9 +1,15 @@
 # Mission 4
 https://www.hackthissite.org/missions/javascript/4/
 
+- [Overview](#overview)
+- [Solution](#solution)
+- [Key Idea](#key-idea)
+
+## Overview
 Faith is trying to trick you... she knows that you're tired after all the math works...
 
-**Answer:** This confused me for longer than it probably should have. Check the page source and look at the JavaScript:
+## Solution
+This confused me for longer than it probably should have. Check the page source and look at the JavaScript:
 ```
 RawrRawr = "moo";
 function check(x)
@@ -25,4 +31,5 @@ The key is `"+RawrRawr+" == "hack_this_site"` is a misdirection. It's a Boolean 
 
 `""+RawrRawr+""` literally means concatenate "" (an empty string) to RawrRawr and "" (another empty string). The comparison simplifies down to just RawrRawr, which we know equals moo, so that's our answer.
 
-**Key Idea:** Don't overthink math! Sometimes the answer isn't as tricky as it looks.
+## Key Idea
+Don't overthink math! Sometimes the answer isn't as tricky as it looks.
