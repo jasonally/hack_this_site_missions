@@ -63,9 +63,9 @@ Run this JavaScript in the console:
 Similar to our money transfer, this will create a new button pre-populated with clearing logFiles instead of [your_username]SQLFiles. Click the button to clear the logs and complete the mission.
 
 ## Key Concepts
-SQL injection, specifically retrieving hidden data
-Cookie tampering
-JavaScript injection
+SQL injection, specifically retrieving hidden data\
+Cookie tampering\
+JavaScript injection\
 
 ## Key Ideas
 Hopefully no legitimate bank would store their user data in a database prone to a SQL injection like we saw in this mission, but plenty of sites might still have this type of setup. Hypothetically, if you were trying to obtain someone's username and/or password for a website and you couldn't just get it from a SQL injection, maybe you'd have to resort to a [phishing or spear phishing](https://www.barracuda.com/glossary/phishing-spear-phishing) attack. Even then, hopefully sensitive sites for services like banking would use two-factor authentication to make unauthorized access more difficult -- though [crooks have workarounds](https://krebsonsecurity.com/2020/04/would-you-have-fallen-for-this-phone-scam/).
