@@ -62,8 +62,8 @@ Luckily, our initial investigation makes it much easier for us to figure out how
 We identified previously that the logs file we're trying to clear is located at ./files/logs/logs.txt. So, change the value of the hidden input type to that file path, click Subscribe, and you're done. This functionality will clear the log file and we've completed the mission.
 
 ## Key Concepts
-Cookie tampering
-Cookie stealing
+Cookie tampering\
+Cookie stealing\
 Cross-site scripting (XSS)
 
 ## Key Ideas
