@@ -47,8 +47,8 @@ Compose a message to m-crap (owner), add a subject, add the following message bo
 
 It's beyond the scope of this mission to actually execute an XSS attack, so we've got to simulate it and think through it to the best of our ability. When the boss opens your message, his browser will execute this code (because the web application doesn't properly filter out rogue JavaScript) and it will redirect his browser to http://example.com/stealcookies.php?[his_login_cookie]. In this simulation the idea would be that you control the site in question – which in this case is example.com – and stealcookies.php is a script which would save your boss' cookie for you to retrieve later. The script might just save the data to a database, it might email it to you, or something along those lines.
 
-Once you send the message you'll see some more text appear on the page saying something like this:
-It's beyond the scope of this mission to check the XSS. So, assume you got this cookie:
+Once you send the message you'll see some more text appear on the page saying something like this:\
+It's beyond the scope of this mission to check the XSS. So, assume you got this cookie:\
 strUsername=m-crap%40crappysoft.com; strPassword=94a35a3b7befff5eb2a8415af04aa16c; intID=1;
 
 Again, it's beyond the scope of this mission for us to actually execute a XSS attack, so we just got the cookie information provided to us. We could have probably guessed the boss would have intID=1, but we wouldn't have known his password (either the plain text version or the hashed version). But now we've got it all. Update your cookie to reflect the indID, strPassword, and strUsername values we've now obtained and we're now effectively logged in as the boss. Click the Pay Salaries link and click the Pay button next to your friend's email address to pay him.
