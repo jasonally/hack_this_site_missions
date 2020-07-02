@@ -1,6 +1,22 @@
 # Mission 11
 https://www.hackthissite.org/playlevel/11/
 
+- [Overview](#overview)
+- [Solution](#solution)
+  * [Details From the Site Layout](#details-from-the-site-layout)
+  * [Listing Directory Contents](#listing-directory-contents)
+  * [Details From the Site Layout, Part 2](#details-from-the-site-layout--part-2)
+  * [Dumping Tables](#dumping-tables)
+  * [Logging Into the Service Panel](#logging-into-the-service-panel)
+  * [Recover the Archive](#recover-the-archive)
+- [Key Concepts](#key-concepts)
+- [Key Ideas](#key-ideas)
+  * [Regarding Perl](#regarding-perl)
+  * [BudgetServ's Bad Security Practices](#budgetserv-s-bad-security-practices)
+  * [Other Techniques](#other-techniques)
+  * [Hosting Services](#hosting-services)
+  * [Hosting Terms and Laws](#hosting-terms-and-laws)
+
 ## Overview
 The Space46 hacker community has been taken down not by mindless script kiddies, but by uptight network administrators! Help Space46 get his files back so he can restore the community and find a better host.
 
