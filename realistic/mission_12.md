@@ -54,7 +54,7 @@ You can also access shares directly by entering a "UNC" name. Click Start then R
 
 Maybe we can use the address bar to directly access files and folders on the server's hard drive. What's more, there's a URI scheme for [file](https://en.wikipedia.org/wiki/File_URI_scheme), which allows us to retrieve files from someone's own computer. This is how, for instance, you can open some text and PDF documents using your web browser. So, if the file URI scheme can help us retrieve files, and we know Windows 95 by default can allow us to access a machine's files and folders, we might have a way in.
 
-Try using the address bar to navigate to the server's hard drive, file://C:\. It works, and now we can see the directory tree inside the server's hard drive. The one caveat is we have to keep using the address bar to navigate. The links in the directory tree itself don't seem to work.
+Try using the address bar to navigate to the server's hard drive, file://C:\\. It works, and now we can see the directory tree inside the server's hard drive. The one caveat is we have to keep using the address bar to navigate. The links in the directory tree itself don't seem to work.
 
 Navigate to file://C:\WEB. We're blocked from accessing the Perl and cgi-bin directories, but we can access \HTML by navigating to file://C:\WEB\HTML. Inside are files for the homepage and images we saw on the homepage, as well as a file called heartlandadminpanel.html. We already know the .html homepage file and the images are saved directly off the root directory, so it stands to reason heartlandadminpanel.html is saved there, too. Try navigating to https://www.hackthissite.org/missions/realistic/12/heartlandadminpanel.html in your browser.
 
@@ -80,7 +80,7 @@ Once you get here, the rest of the mission is easy. The admin panel loads proper
 ## Key Concepts
 URI schemes\
 Directory traversal\
-Local file intrusion\
+Local file intrusion
 
 ## Key Ideas
 ### Server Operating Systems
