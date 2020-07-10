@@ -7,7 +7,7 @@ https://www.hackthissite.org/playlevel/10/
   * [Finding a Staff Account](#finding-a-staff-account)
   * [Changing Your User Agent](#changing-your-user-agent)
   * [Giving Yourself Administrator Privileges](#giving-yourself-administrator-privileges)
-  * [Changing Zach's Grades](#changing-zach-s-grades)
+  * [Changing Zach's Grades](#changing-zachs-grades)
     + [JavaScript Injection Method](#javascript-injection-method)
     + [URL Tampering Method](#url-tampering-method)
 - [Key Concepts](#key-concepts)

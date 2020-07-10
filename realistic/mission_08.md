@@ -3,7 +3,7 @@ https://www.hackthissite.org/playlevel/8/
 
 - [Overview](#overview)
 - [Solution](#solution)
-  * [Finding Gary Hunter's Account](#finding-gary-hunter-s-account)
+  * [Finding Gary Hunter's Account](#finding-gary-hunters-account)
   * [Transferring the Money](#transferring-the-money)
   * [Clearing the Logs](#clearing-the-logs)
 - [Key Concepts](#key-concepts)

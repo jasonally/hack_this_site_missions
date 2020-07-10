@@ -12,7 +12,7 @@ https://www.hackthissite.org/playlevel/11/
 - [Key Concepts](#key-concepts)
 - [Key Ideas](#key-ideas)
   * [Regarding Perl](#regarding-perl)
-  * [BudgetServ's Bad Security Practices](#budgetserv-s-bad-security-practices)
+  * [BudgetServ's Bad Security Practices](#budgetservs-bad-security-practices)
   * [Other Techniques](#other-techniques)
   * [Hosting Services](#hosting-services)
   * [Hosting Terms and Laws](#hosting-terms-and-laws)
