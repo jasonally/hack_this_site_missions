@@ -96,7 +96,7 @@ Directory traversal\
 Password cracking
 
 ### Key Ideas
-This mission referenced several ideas we've seen in other missions. We saw table names, making sense of error messages and source code, and intuition about a site's layout. But the detail which stood out to me the most was this site's attempt at security by obscurity. The site admins thought obfuscating the location of sensitive directories would be enough to keep the site secure. They were wrong. Nobody should rely on that as their primary means of keeping a system safe.
+This mission referenced several ideas we've seen in other missions. We saw table names, making sense of error messages and source code, and intuition about a site's layout. But the detail which stood out to me the most was this site's attempt at [security through obscurity](https://en.wikipedia.org/wiki/Security_through_obscurity). The site admins thought obfuscating the location of sensitive directories would be enough to keep the site secure. They were wrong. Nobody should rely on that as their primary means of keeping a system safe.
 
 [Elbonia](https://en.wikipedia.org/wiki/Dilbert#Elbonia) is also a reference to a fictional country from the Dilbert universe.
 
