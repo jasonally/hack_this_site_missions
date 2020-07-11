@@ -81,7 +81,7 @@ The directory we've just discovered has a file, passwords.fip, which contains wh
 
 We've got our login credentials, but where do we use it?
 
-#### Finding Hidden Parts of the Site, Part 2
+### Finding Hidden Parts of the Site, Part 2
 The homepage included a thank you message to the site admins, so maybe there's an admin page at https://www.hackthissite.org/missions/realistic/13/admin. If you go there, sure enough, there's a login page. Except our username and password credentials don't seem to work. Maybe there's another login page we should be looking for.
 
 Go back to the stack trace at https://www.hackthissite.org/missions/realistic/13/speeches2.php and look at it in more detail. Two of the error messages include this line:
