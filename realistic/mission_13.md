@@ -14,9 +14,9 @@ https://www.hackthissite.org/playlevel/13/
   * [Taking Stock of Possible Vulnerabilities](#taking-stock-of-possible-vulnerabilities)
   * [Finding Hidden Parts of the Site](#finding-hidden-parts-of-the-site)
   * [Cracking Hashes](#cracking-hashes)
-    + [Finding Hidden Parts of the Site, Part 2](#finding-hidden-parts-of-the-site--part-2)
-  * [Key Concepts](#key-concepts)
-  * [Key Ideas](#key-ideas)
+  * [Finding Hidden Parts of the Site, Part 2](#finding-hidden-parts-of-the-site--part-2)
+- [Key Concepts](#key-concepts)
+- [Key Ideas](#key-ideas)
 
 ## Overview
 Elbonia's Elections are coming! Help delay these elections by taking down the main competitor's site! Be careful though, you get caught, you'll be wishing you had your soap on a rope...
@@ -91,11 +91,11 @@ C:\Program Files\Apache Group\Apache2\ENRP\21232f297a57a5a743894a0e4a801fc3\spec
 
 The 21232f297a57a5a743894a0e4a801fc3 string looks like another MD5 hash. It decrypts to admin. Maybe the real admin page is actually https://www.hackthissite.org/missions/realistic/13/21232f297a57a5a743894a0e4a801fc3. If we try navigating to that URL it indeed leads to another login page, our decrypted credentials work, and it completes the mission.
 
-### Key Concepts
+## Key Concepts
 Directory traversal\
 Password cracking
 
-### Key Ideas
+## Key Ideas
 This mission referenced several ideas we've seen in other missions. We saw table names, making sense of error messages and source code, and intuition about a site's layout. But the detail which stood out to me the most was this site's attempt at [security through obscurity](https://en.wikipedia.org/wiki/Security_through_obscurity). The site admins thought obfuscating the location of sensitive directories would be enough to keep the site secure. They were wrong. Nobody should rely on that as their primary means of keeping a system safe.
 
 [Elbonia](https://en.wikipedia.org/wiki/Dilbert#Elbonia) is also a reference to a fictional country from the Dilbert universe.
