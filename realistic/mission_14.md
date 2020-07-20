@@ -1,6 +1,20 @@
 # Mission 14
 https://www.hackthissite.org/playlevel/14/
 
+- [Overview](#overview)
+- [Solution](#solution)
+  * [Properly Solving This Mission in the 2020s Isn't Possible](#properly-solving-this-mission-in-the-2020s-isnt-possible)
+  * [Details from the Site Layout](#details-from-the-site-layout)
+  * [Functionalities Vulnerable to SQL Injection](#functionalities-vulnerable-to-sql-injection)
+  * [Using a Null Byte Input to List Directory Contents](#using-a-null-byte-input-to-list-directory-contents)
+  * [Using a Null Byte Input to Read Files](#using-a-null-byte-input-to-read-files)
+  * [Bypassing Security Privileges](#bypassing-security-privileges)
+  * [Logging into the Admin Account](#logging-into-the-admin-account)
+- [Key Concepts](#key-concepts)
+- [Key Ideas](#key-ideas)
+  * [Hints About Backend Scripts](#hints-about-backend-scripts)
+  * [Null Byte Injection Workarounds](#null-byte-injection-workarounds)
+
 ## Overview
 An internet start-up is rumoured to be selling user data and usage habits to advertisers while they claim the opposite. Hack in and get some proof.
 
@@ -15,12 +29,12 @@ This mission was meant to demonstrate the value of null byte attacks. The places
 For the purposes of this mission I'll continue to outline what I found to be the steps to finish the mission, but note that a big part of it isn't really reproducible anymore.
 
 ### Details from the Site Layout
-The mission site has the look and feel of what Yahoo looked like in the late 1990s. I guess this mission was made before Google superseded Yahoo as the dominate search engine. If you click through the pages you'll see basic versions of what a search engine, even in the 2020s, offers: results for web search, news, and finance, and functionalities for email, webpage development, and connecting with other people. 
+The mission site has the look and feel of what Yahoo looked like in the late 1990s. I guess this mission was made before Google superseded Yahoo as the dominant search engine. If you click through the pages you'll see basic versions of what a search engine, even in the 2020s, offers: results for web search, news, and finance, and functionalities for email, webpage development, and connecting with other people. 
 
 The mission solution likely involves some way of getting admin access, so I thought an initial step would be to make an account, similar to what we did in [Realistic Mission 8](https://github.com/jasonally/hack_this_site_missions/blob/master/realistic/mission_08.md). I couldn't get the feature to work and I wasn't able to make an account, so I figured I would look elsewhere.
 
 ### Functionalities Vulnerable to SQL Injection
-Several functionalties have pages which take in URL parameters, including the pages for search, news, and finance. Trying SQL injection inputs is an obvious first step, similar to what we did in [Realistic Mission 9](https://github.com/jasonally/hack_this_site_missions/blob/master/realistic/mission_09.md). The news URLs eventually stand out, because URLs for nonexistent news articles like https://www.hackthissite.org/missions/realistic/14/news.cgi?story=20 return a strange error message: `Failed to load 20.news`.
+Several functionalities have pages which take in URL parameters, including the pages for search, news, and finance. Trying SQL injection inputs is an obvious first step, similar to what we did in [Realistic Mission 9](https://github.com/jasonally/hack_this_site_missions/blob/master/realistic/mission_09.md). The news URLs eventually stand out, because URLs for nonexistent news articles like https://www.hackthissite.org/missions/realistic/14/news.cgi?story=20 return a strange error message: `Failed to load 20.news`.
 
 The backend program takes the URL, grabs whatever value you provide for story, and looks for a file containing that value and a .news suffix. This isn't a definitive article not found error message we'd expect to see, and it's a hint this can be tampered with.
 
@@ -64,6 +78,7 @@ SQL injection, specifically null byte injection
 ### Hints About Backend Scripts
 Like with several realistic missions, the first key to finding a vulnerable part of the site was getting an unexpectedly helpful error message. In this mission, it was finding out the news functionality loaded files with a .news suffix. This provided a clue as to how we might be able to get the site to behave outside of its intended purpose by bypassing this part of the backend code. We needed the right tool to do this, however, which in the past was using the null byte injection.
 
-### Null Byte Injection Workarounds
-You can still find references to null byte injections working on web applications, even if their usefulness seems to have diminished throughout the 2010s. But the idea in this mission of finding an admin account and gaining acccess to it still lives on. At the time of this writing, this type of attack happened less than a week ago against Twitter. How attackers got into Twitter's system is still under investigation, but [SIM swapping](https://en.wikipedia.org/wiki/SIM_swap_scam) may [have been a factor](https://krebsonsecurity.com/2020/07/whos-behind-wednesdays-epic-twitter-hack/) to help the attackers get admin access.
+### Usefulness of Null Byte Injections
+You can still find working null byte injection vulnerabilities in web applications, even if their existence has diminished throughout the 2010s. For instance, PHP 5.3.4 fixed [a major null byte injection bug](https://bugs.php.net/bug.php?id=39863), which was released in December 2010. 
 
+But the idea of what the null byte injection in this mission helped us accomplish is worth pondering. In this mission, it helped us find an admin account and gain access to it. That idea still lives on though other types of attacks, some of which didn't even exist in the early 2000s. For instance, at the time of this writing, less than a week ago there was a major attack against Twitter. How attackers did what they did is still under investigation, but [SIM swapping](https://en.wikipedia.org/wiki/SIM_swap_scam) may [have been a factor](https://krebsonsecurity.com/2020/07/whos-behind-wednesdays-epic-twitter-hack/) to help the attackers get admin access. 
