@@ -77,10 +77,16 @@ the storeapplication.php page loads a green checkbox image saved at
 
 ### Accessing the Backup File
 #### Downloading the File
-Navigate over to this new directory in your browser. There's an images/ directory containing files like the green checkbox we just saw on the storeapplication.php page as well as a backup.zip file. Download it to your machine and try to open it. Darn, it's password protected.
+Navigate over to this new directory in your browser. There's an images/
+directory containing files like the green checkbox we just saw on the
+storeapplication.php page as well as a backup.zip file. Download it to your
+machine and try to open it. Darn, it's password protected.
 
 #### Peeking Inside
-One thing we can do as an initial step is use command line trickery to peek inside the archive and get a sense of what's inside. From the Terminal, change directory over to wherever you've saved backup.zip (I saved my version of the archive to the desktop), and run `unzip -l backup.zip`. 
+One thing we can do as an initial step is use command line trickery to peek
+inside the archive and get a sense of what's inside. From the Terminal, change
+directory over to wherever you've saved backup.zip (I saved my version of the
+archive to the desktop), and run `unzip -l backup.zip`. 
 
 You should get something like this:
 ```
@@ -96,21 +102,61 @@ You should get something like this:
     22584                     6 files
 ```
 
-To state the obvious: assuming this is a backup of part of the site, what we've got inside this archive are copies of files on the site right now. It suggests there's a directory called internal_messages/, so let's see if it's there on the live site.
+To state the obvious: assuming this is a backup of part of the site, what we've
+got inside this archive are copies of files on the site right now. It suggests
+there's a directory called internal_messages/, so let's see if it's there on the
+live site.
 
-Unfortunately, https://www.hackthissite.org/missions/realistic/15/internal_messages/ loads a Page Not Found message. But check the network activity in your browser's developer tools to see if that's actually what happens. When I check the activity, this page actually returns a 403 Forbidden status. So this directory really is there, we just can't access it via our browser. Similarly, if we try to access https://www.hackthissite.org/missions/realistic/15/internal_messages/msgshow.php and https://www.hackthissite.org/missions/realistic/15/internal_messages/msgauth.php via our browser, we get 200 OK status codes but nothing loads on the page.
+Unfortunately,
+https://www.hackthissite.org/missions/realistic/15/internal_messages/ loads a
+Page Not Found message. But check the network activity in your browser's
+developer tools to see if that's actually what happens. When I check the
+activity, this page actually returns a 403 Forbidden status. So this directory
+really is there, we just can't access it via our browser. Similarly, if we try
+to access
+https://www.hackthissite.org/missions/realistic/15/internal_messages/msgshow.php
+and
+https://www.hackthissite.org/missions/realistic/15/internal_messages/msgauth.php
+via our browser, we get 200 OK status codes but nothing loads on the page.
 
-So, these files are indeed present on the site, we just can't see anything of use through our browser. To view their source code we'll need to crack the backup.zip file, and to do that we'll need a specific program.
+So, these files are indeed present on the site, we just can't see anything of
+use through our browser. To view their source code we'll need to crack the
+backup.zip file, and to do that we'll need a specific program.
 
 #### Cracking the Backup Using PkCrack
-The theory behind compressed files like backup.zip is: compression uses a predictable algorithm to reduce the size of the files you're trying to compress. Compression needs to be predictable so you can decompress the files (note how this is in contrast to something like hashing, which uses a one-way algorithm which isn't meant to be reversed). But this predictability with compressed files makes it theoretically possible to crack open a password-protected compressed archive. [PkCrack](https://www.unix-ag.uni-kl.de/~conrad/krypto/pkcrack.html) is a tool to do just this, but it requires two more elemente: an uncompressed, identical version of one file which is part of the compressed archive, plus a compressed version of this file.
+The theory behind compressed files like backup.zip is: compression uses a
+predictable algorithm to reduce the size of the files you're trying to compress.
+Compression needs to be predictable so you can decompress the files (note how
+this is in contrast to something like hashing, which uses a one-way algorithm
+which isn't meant to be reversed). But this predictability with compressed files
+makes it theoretically possible to crack open a password-protected compressed
+archive. [PkCrack](https://www.unix-ag.uni-kl.de/~conrad/krypto/pkcrack.html) is
+a tool to do just this, but it requires two more elemente: an uncompressed,
+identical version of one file which is part of the compressed archive, plus a
+compressed version of this file.
 
-Luckily for us, we can look at the contents of backup.zip and make an important observation: the index.htm file in the archive might be the same as the index.htm file on the live site. We'll need to save a copy of index.htm from the live site. But I found trying to do this in a 2020s-era browser like Chrome v.83 didn't save the file exactly the way it needs to be to work with this mission (Chrome puts the images from index.htm in a separate folder and that's not what we want). We can see from running `unzip -l backup.zip` that index.htm is 4423 bytes. We need the version we'll pull from the live site to be 4423 bytes, too.
+Luckily for us, we can look at the contents of backup.zip and make an important
+observation: the index.htm file in the archive might be the same as the
+index.htm file on the live site. We'll need to save a copy of index.htm from the
+live site. But I found trying to do this in a 2020s-era browser like Chrome v.83
+didn't save the file exactly the way it needs to be to work with this mission
+(Chrome puts the images from index.htm in a separate folder and that's not what
+we want). We can see from running `unzip -l backup.zip` that index.htm is 4423
+bytes. We need the version we'll pull from the live site to be 4423 bytes, too.
 
 ##### Saving a Copy of index.htm with wget
-I found [wget](https://formulae.brew.sh/formula/wget) was a useful tool to accomplish this task (I noted in [Realistic Mission 5](https://github.com/jasonally/hack_this_site_missions/blob/master/realistic/mission_05.md) I use [Homebrew](https://brew.sh/) on my Mac to manage packages). Once I installed wget, I ran `wget https://www.hackthissite.org/missions/realistic/15/index.htm` in Terminal to download and save a copy of index.htm from the live site. If you run `ls -l` in whatever directory you saved index.htm to, you should hopefully see this version of the file is also 4423 bytes.
+I found [wget](https://formulae.brew.sh/formula/wget) was a useful tool to
+accomplish this task (I noted in [Realistic Mission
+5](https://github.com/jasonally/hack_this_site_missions/blob/master/realistic/mission_05.md)
+I use [Homebrew](https://brew.sh/) on my Mac to manage packages). Once I
+installed wget, I ran `wget
+https://www.hackthissite.org/missions/realistic/15/index.htm` in Terminal to
+download and save a copy of index.htm from the live site. If you run `ls -l` in
+whatever directory you saved index.htm to, you should hopefully see this version
+of the file is also 4423 bytes.
 
-Once the download is complete, create a compressed version of the index.htm file you just pulled from the live site.
+Once the download is complete, create a compressed version of the index.htm file
+you just pulled from the live site.
 
 ##### Downloading and Installing PkCrack
 PkCrack dates back to the early 2000s and there's a problem: the build tools the original program uses don't play nicely with modern machines. The good news is [there's a Github repo](https://github.com/keyunluo/pkcrack) to build PkCrack with the modern build tool [cmake](https://formulae.brew.sh/formula/cmake). Install cmake if you don't already have it on your machine. I also got a message telling me to add /usr/local/opt/make/libexec/gnubin to my shell PATH for cmake to work properly, so I did that (see [here](https://medium.com/@jalendport/what-exactly-is-your-shell-path-2f076f02deb4) for a primer on how to update your shell PATH).
