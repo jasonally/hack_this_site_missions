@@ -24,10 +24,11 @@ https://www.hackthissite.org/playlevel/15/
   * [Hash Cracking](#hash-cracking)
   * [Web Shells](#web-shells)
 
-## Overview 900 billion dollars were spent on guns this year! Now rumours are
-spreading that seculas Ltd. is developing an awful laser aided weapon, and that
-they already have patents pending. Please try to find out what their latest
-patents are about.
+## Overview
+900 billion dollars were spent on guns this year! Now rumours are spreading that
+seculas Ltd. is developing an awful laser aided weapon, and that they already
+have patents pending. Please try to find out what their latest patents are
+about.
 
 From: html
 
@@ -44,23 +45,25 @@ open.
 If you think like me please help me and fight those people that make money with
 war.
 
-## Solution This mission is hard both because of the multiple steps and because
-of the necessary tools and intuition. It requires knowledge of shell commands,
-the ability to download programs and files to your own machine, and reading your
-way through someone else's code. Don't forget the end goal, either: we're
-looking for a way to access patent information in seculas' systems.
+## Solution
+This mission is hard both because of the multiple steps and because of the
+necessary tools and intuition. It requires knowledge of shell commands, the
+ability to download programs and files to your own machine, and reading your way
+through someone else's code. Don't forget the end goal, either: we're looking
+for a way to access patent information in seculas' systems.
 
-### Details from the Site Layout Start with the usual recon of exploring the
-site. If you're observant, you'll see at least two things in this initial set of
-pages: * The [index
-page](https://www.hackthissite.org/missions/realistic/15/index.htm) has [meta
-tags](https://www.w3schools.com/tags/tag_meta.asp). These don't appear on the
-page in a browser but they're machine parsable. I think this is the first time
-meta tags like these have appeared in a realistic mission and the Author tag
-includes the name and email address for a webadmin. * Images are saved in an
-images/ directory which has directory listing enabled. The directory by itself
-doesn't have anything of use to us, but it's a hint, like with other missions,
-additional directories we encounter might have this feature enabled.
+### Details from the Site Layout
+Start with the usual recon of exploring the site. If you're observant, you'll
+see at least two things in this initial set of pages:
+* The [index page](https://www.hackthissite.org/missions/realistic/15/index.htm)
+has [meta tags](https://www.w3schools.com/tags/tag_meta.asp). These don't
+appear on the page in a browser but they're machine parsable. I think this is 
+the first time meta tags like these have appeared in a realistic mission and 
+the Author tag includes the name and email address for a webadmin.
+* Images are saved in an images/ directory which has directory listing enabled.
+The directory by itself doesn't have anything of use to us, but it's a hint,
+like with other missions, additional directories we encounter might have this
+feature enabled.
 
 The real key to pushing us ahead in this mission is from the
 [Jobs](https://www.hackthissite.org/missions/realistic/15/jobs.php) page.
