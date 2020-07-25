@@ -303,6 +303,10 @@ while, it's known what this hash resolves to.
 us it resolves to foobar. Use root and foobar as your credentials on the login
 screen to get into admin_area/.
 
+Note: I couldn't get the shellPswd_root hash to appear using Chrome. Maybe
+Chrome has some built-in filtering to prevent the vulnerability from becoming
+visible on the frontend. But this step worked as intended in Firefox.
+
 ### Navigating the Shell
 We're in and now we've got a web shell interface to work with. This works just
 like a shell interface on our local machine, so might as well get a sense of
