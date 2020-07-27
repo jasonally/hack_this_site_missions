@@ -1,3 +1,12 @@
+# HackThisSite.Org Missions
+I started working through these missions in 2019 before returning to them in
+2020 and really trying to understand the concepts. The missions now are a bit
+dated – they were originally created in the early 2000s – but it's not hard
+to think about how concepts and web technologies have changed since then. So,
+I think these missions were still useful to learn basic ideas behind hacking
+and web security.
+
+## Index of Key Concepts
 Buffer Overflow
 * [Realistic Mission 15](https://github.com/jasonally/hack_this_site_missions/blob/master/realistic/mission_15.md)
 
@@ -48,6 +57,9 @@ JavaScript Injection
 * [Realistic Mission 8](https://github.com/jasonally/hack_this_site_missions/blob/master/realistic/mission_08.md)
 * [Realistic Mission 10](https://github.com/jasonally/hack_this_site_missions/blob/master/realistic/mission_10.md)
 * [Realistic Mission 15](https://github.com/jasonally/hack_this_site_missions/blob/master/realistic/mission_15.md)
+
+JavaScript Tampering
+* [JavaScript Missions 1-7](https://github.com/jasonally/hack_this_site_missions/tree/master/javascript)
 
 Local File Intrusion
 * [Basic Mission 3](https://github.com/jasonally/hack_this_site_missions/blob/master/basic/missions_01-05.md#mission-3)
