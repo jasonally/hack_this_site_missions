@@ -170,7 +170,8 @@ https://www.hackthissite.org/missions/realistic/14/administrator.cgi, and going
 there completes the mission.
 
 ## Key Concepts
-SQL injection, specifically null byte injection
+SQL injection, specifically null byte injection\
+Local file intrusion
 
 ## Key Ideas
 ### Hints About Backend Scripts
