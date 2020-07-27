@@ -7,6 +7,25 @@ I think these missions were still useful to learn basic ideas behind hacking
 and web security.
 
 ## Index of Key Concepts
+
+- [Buffer Overflow](#buffer-overflow)
+- [Command Injection](#command-injection)
+- [Cookie Stealing](#cookie-stealing)
+- [Cookie Tampering](#cookie-tampering)
+- [Cross-Site Scripting](#cross-site-scripting)
+- [Directory Traversal](#directory-traversal)
+- [Decryption](#decryption)
+- [Hash Cracking](#hash-cracking)
+- [HTML Tampering](#html-tampering)
+- [JavaScript Injection](#javascript-injection)
+- [JavaScript Tampering](#javascript-tampering)
+- [Local File Intrusion](#local-file-intrusion)
+- [Privilege Escalation](#privilege-escalation)
+- [SQL Injection](#sql-injection)
+- [Plaintext Attack](#plaintext-attack)
+- [User Agent Tampering](#user-agent-tampering)
+- [URL Tampering](#url-tampering)
+
 ### Buffer Overflow
 * [Realistic Mission 15](https://github.com/jasonally/hack_this_site_missions/blob/master/realistic/mission_15.md)
 
