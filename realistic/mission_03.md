@@ -90,7 +90,7 @@ the site stores user inputs immediately, without any validation check.
 
 Now, visit https://www.hackthissite.org/missions/realistic/3/submitpoems.php.
 Enter `../index.html` as the Name of poem, which I picked up from the
-PortSwigger article about path traversal. Paste the raw HTML from
+PortSwigger article about directory traversal. Paste the raw HTML from
 https://www.hackthissite.org/missions/realistic/3/oldindex.html in the Poem box.
 Press add poem, and you're done. You’ll have successfully rewritten the
 index.html file with the original contents, and as you can see, this is exactly
@@ -98,10 +98,10 @@ what the hackers did to deface the site in the first place. Now, if only we
 could help PeacePoetry get access to the site to fix this underlying problem.
 
 ## Key Concept
-Path traversal
+Directory traversal
 
 ## Key Ideas
-Path traversal is probably how a lot of hackers deface legitimate websites as
+Directory traversal is probably how a lot of hackers deface legitimate websites as
 well as [access
 files](https://hackernoon.com/the-power-of-directory-traversal-93e8dfd608ef)
 webmasters otherwise intend to keep hidden. The easiest way to prevent this type

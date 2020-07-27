@@ -280,8 +280,7 @@ same MyShell version to see if similar files were on the web. I found one
 [here](https://github.com/nikicat/web-malware-collection/blob/master/Backdoors/PHP/myshell.txt).
 I noticed an important difference between our shell.php file and the version I
 found online. When you compare line 123 of shell.php to line 110 of the version
-I found online, line 123 of shell.php has this: `$MyShellVersion =  "MyShell
-1.1.0 build 20010923 ".$$PHP_AUTH_USER;`
+I found online, line 123 of shell.php has this: `$MyShellVersion =  "MyShell 1.1.0 build 20010923 ".$$PHP_AUTH_USER;`
 
 It seems innocuous, but this is a major flaw. The extra $ seems to cause the
 program to print the value of a variable if you provide the name of a variable

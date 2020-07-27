@@ -107,7 +107,7 @@ username and decrypted password, and that completed the mission.
 
 ## Key Concepts
 Directory listing  
-Path traversal  
+Directory traversal  
 Hash cracking  
 
 ## Key Ideas 
